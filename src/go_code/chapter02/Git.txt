@@ -1,4 +1,4 @@
-git version 查看git版本
+tgit version 查看git版本
 git config --global user.name 设置用户名
 git config --global user.email 设置用户的邮箱
 

@@ -1,0 +1,30 @@
+1、Boolean type
+   values are true or false
+   不是其他类型的别名
+   默认为false
+
+2、 numeric type
+    Integers
+       Singed integers 有符号
+          int type has varying size, but min 32 bits
+          int8 ----int64
+        
+        Unsigned integers 无符号
+          uint8---uint32
+        可进行加减乘除取余操作、异或关系运算
+    
+    Floating point numbers
+        float32\float64 默认64
+        可进行加减乘除取余操作
+    
+    Complex numbers
+        zero value is (0+0i)
+        64---128 bit versions
+        real实部、imag虚部
+
+3、Test types
+    Strings
+        UTF-8
+        用+将字符串链接
+    Rune
+        UTF-32
