@@ -1,1 +1,23 @@
 数组和切片
+Arrays
+   数组中的元素的类型相同
+   固定的长度
+   Declaration styles:
+      (1) a := [3]int{1,2,3}
+      (2) a := [...]int{1,2,3}
+      (3) var a [3]int 
+    从0开始索引
+    len function returns size of array
+    Copies refer to different underlying data
+
+Slices
+    Backed by array
+    Creation styles
+       a := []int{1,2,3}
+
+       via make function 通过make来创建切片，make也会创建一个数组，是由切片在底层进行维护
+           a := make([]int, 10)//capacity and length == 10
+           a := make([]int, 10, 100)//length ==10, capacity == 100
+        len 函数返回切片长度
+        capacity函数返回底层数组的长度
+        append函数添加元素
