@@ -1,0 +1,9 @@
+git version 查看git版本
+git config --global user.name 设置用户名
+git config --global user.email 设置用户的邮箱
+
+git add . 提交当前目录中所有文件
+git commit 确认提交 转到一个页面定义
+git log   查看git更新日志
+
+git commit -m "第二次提交" 提交简化版
