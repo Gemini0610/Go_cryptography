@@ -1,0 +1,8 @@
+Maps:
+   使用make函数、或者直接定义
+   myMap["key"] = "value" 
+   "value,ok"判断某个元素是否在map中
+
+Structs:
+   父子类继承对象
+   

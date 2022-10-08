@@ -1,0 +1,13 @@
+For statements
+    for initializer; test; incrementer{}
+    for test{}
+    for {}
+
+    exiting early:
+        break 
+        continue
+        labels
+    
+    looping over collections
+        arrays, slices, maps, strings, channels
+        句式： for k, v := range collections{}

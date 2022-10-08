@@ -1,0 +1,15 @@
+defer:
+    设置多个defer，会逆序执行
+    last-in first-out (LIFO)后进先出
+panic: 
+    panic语句在defer后执行
+    panic没有被recover捕获，执行逻辑将调用栈返回，直到goroutine退出
+         被recover捕获结束
+    对于错误处理通常都是采用error处理
+    两种适合采用panic场景：
+        (1)使用在真正有异常的情况，例：编译错误
+        (2)程序需要使用其他依赖，但初始化失败
+recover:异常捕获机制
+        recover逻辑放在defer语句后，否则函数将返回nil，看不到任何结果
+         
+error作为方法或者函数的最后一个返回参数

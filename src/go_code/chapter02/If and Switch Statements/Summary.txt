@@ -1,0 +1,6 @@
+switch:
+    case后的各个表达式的值的数据类型，必须和swithc的表达式数据类型一致
+    fallthrough（switch穿透）
+                直接运行紧跟的后一个的case或者default语句
+                紧跟的后一个case条件不能定义常量和变量
+                执行完fallthrough后直接跳到下一个条件语句，本条件执行语句后面的语句不执行

@@ -1,0 +1,5 @@
+uppercase function 全局函数  lowercase function 内部函数
+func 函数名(形参列表)(返回值类型列表){
+     语句
+     return 返回值列表
+}
