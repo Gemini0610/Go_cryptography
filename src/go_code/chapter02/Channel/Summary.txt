@@ -1,0 +1,18 @@
+使用全局变量加锁同步来解决goroutine的通讯不完美，
+不利于多个协程对全局变量的读写操作----所以引出了Channel
+
+本质:队列 先进先出FIFO
+线程安全，多goroutine访问时，不需要加锁
+channel有类型，一个string的channel只能存放string类型数据
+
+声明： var 变量名 chan 数据类型
+       channel引用类型、必须初始化才能写入数据 make后才能使用
+       管道是有类型的 intChan只能写入int类型数据
+    channel的数据放满后，不能再放入，若channel取出数据后，可以继续放入
+    在没有使用协程的情况下，若channel数据取完了，再取就会dead lock
+
+Channel关闭：关闭后不能再写入数据，但是可以读数据
+
+遍历：for-range
+      1、在遍历时，若channel没有关闭，则会出现deadlock错误
+      2、在遍历时，若channel已经关闭，则正常遍历，遍历结束后退出遍历

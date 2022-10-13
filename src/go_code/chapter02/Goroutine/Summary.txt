@@ -1,0 +1,13 @@
+Don't create goroutines inlibraries
+    让使用者控制并发
+
+gofunc(){
+
+}()   定义
+
+Use sync.WaitGroup to wait for groups of goroutines to complete
+
+MGP模式:
+    M:操作系统的主线程(是物理线程)
+    P:协程执行需要的上下文
+    G:协程
