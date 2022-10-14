@@ -7,6 +7,7 @@ channel有类型，一个string的channel只能存放string类型数据
 
 声明： var 变量名 chan 数据类型
        channel引用类型、必须初始化才能写入数据 make后才能使用
+          变量名 := make(chan 数据类型，容量大小)
        管道是有类型的 intChan只能写入int类型数据
     channel的数据放满后，不能再放入，若channel取出数据后，可以继续放入
     在没有使用协程的情况下，若channel数据取完了，再取就会dead lock
