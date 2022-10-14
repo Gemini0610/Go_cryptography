@@ -27,4 +27,18 @@ func main() {
 	}
 	fmt.Println(ret)
 
+	//base58编码
+	ret_b58 := utils.Base58Encoding("he")
+	fmt.Println(ret_b58) //输出调转后的编码
+	// ret_byte := utils.ReverseByteArr([]byte{110, 119, 56})
+	// fmt.Println(ret_byte)
+	aa := utils.Base58Decoding("8wn")
+	fmt.Println("Base58解码为:", aa)
+
+	//md5编码
+	ret_md5 := utils.GenMd5("Sam")
+	fmt.Println("md5编码为:", ret_md5)
+	//sha256编码
+	ret_sha256 := utils.GenSha256("Sam")
+	fmt.Println("sha256编码为:", ret_sha256)
 }
